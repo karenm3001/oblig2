@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title> SVG </title>
+  <link href="website1.css"type="text/css" rel="stylesheet" />
+  <link href="normalize.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ 
+ <body>
+   <div class="wrapper">
+     <header class="header">
+	     <h1> Webutvikling - SVG  </h1>
+
+	<nav id="navbar">
+	     <ul>
+		    <li><a href="oppgave2.html">Hjem</a></li>
+			<li class="meny">
+			 <a href="#" class="menyBtn">Meny</a>
+			  <div class="meny-content">
+			   <a href="svg.html">SVG</a>
+			   <a href="mathml.html"> MathML </a>
+			   <a href="git.html">Git/Github</a>
+			  </div>
+			<li><a href="om.html">Om</a></li>
+		</ul>
+	   </nav>
+	  </header>
+   
+  <section class="eksempel">
+      <h2>Eksempel 1 - Sirkel </h2>
+	   <p>Når vi skal tegne en svg bilde, starter man med svg element.
+          Man bruker attributene som høyden og bredden for å bestemme 
+          størrelsen på bilde. Circle taggen brukes til å tegne en sirkel,
+          som har cx og cy attributter som definerer x og y koordinatene til
+          midten av sirkelen. Det brukes også en r taggen som definerer radius. 		  
+		</p>
+	 
+	  <img src="bilder/circle.jpg"> <br />
+	
+	  <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="orange" stroke-width="4" fill="yellow" />
+      </svg>
+	  <svg width="200" height="100">
+      <circle cx="50" cy="50" r="30" stroke="blue" stroke-width="4" fill="green" />
+      </svg>
+	  <h2> Eksempel 2 - Rektangel </h2>
+	    <p> Akkurat som i sirkel, bruker man attributene høyden og bredden. 
+		    Når man skal tegne en rektangel bruker man rect taggen og style
+			taggen definerer CSS egenskaper for rektangel.</p>
+		 <img src="bilder/rect.jpg"><br />
+	     <svg width="200" height="100">
+           <rect width="100" height="100" style="fill:red" />
+          </svg>
+   </section>
+
+    <main class="main-content">
+	<article class="boks">
+
+	 <h2> Hva er SVG </h2>
+	  <p> SVG (Scalable Vector Graphics) er et vektorgrafikk som er basert
+	      på XML og brukes til å vise forskjellige grafikker på Internett.
+		  SVG skal være en del av HTML5, det vil si at vi kunne skrive et 
+		  SVG element i HTML koden.
+	  </p>
+	  <p>Filer i dette formatet bruker et XML tekstformat for å beskrive
+	     hvordan bildet skal vises. Siden teksten blir bruk til å beskrive
+		 grafikken, en SVG fil kan være skalert tl forskjellige størrelsen 
+		 uten å miste kvaliteten.Denne er grunnen til at mange nettside grafikk
+		 ofte bygges i SVG-formatet, slik at de kan endre størrelsen for å 
+		 passe til forskjellige design i fremtiden. 
+	  </p>
+	    <img src="bilder/svglogo.png">
+	 </article>
+	</main>
+   
+  
+    <footer class="footer">
+	<i class="fa fa-facebook-official" style="font-size:36px"></i>
+	 <p> This is made by Karen Molina </p>
+    </footer>
+   </div>
+	</body>
+	</html>
