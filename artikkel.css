@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Raleway');
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.wrapper{
+	display:grid;
+	width:80%;
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	grid-gap:10px;
+	grid-template-areas: "header header header"
+						 "main main left"
+						 "footer footer footer";
+}
+h1, h2{
+	font-family:'Encode Sans Expanded', sans-serif;
+}
+p{
+	font-family:'Raleway', sans-serif;
+}
+/* MAIN */
+.main-content{
+	display:flex;
+	flex-wrap:wrap;
+}
+.main-content{
+	display:grid;
+	grid-area:main;
+}
+
+.boks{
+	padding:10px;
+}
+/* HEADER */
+.header{
+	grid-area: header;
+	background:powderblue;
+	padding:2em;
+	justify-content:space between;
+	display:flex;
+}
+/* NAVIGASJONSMENY*/
+#navbar{
+	margin:auto;
+	flex: 0 1 50%;
+}
+#navbar ul {
+	list-style-type:none;
+    margin:auto;
+}
+#navbar ul li{
+	float:left;
+	display:block;
+	width:auto;
+	padding:10px;
+	text-decoration:none;
+	font-family:'Raleway', sans-serif;
+}
+#navbar ul li a{
+	text-decoration:none;
+	font-size:20px;
+	padding:20px;
+	
+}
+ a:visited{
+	color:salmon;
+}
+a:hover, a:active{	
+	color:black;
+}	
+img{
+	width:300px;
+}
+/*MENY KNAPP CONTENT */
+.meny-content{
+	display:none;
+	position:absolute;
+	background-color:white;
+}
+.meny-content a{
+	text-decoration:none;
+	display:block;
+}
+.meny-content a:hover {
+	background-color: salmon;
+}
+.meny:hover .meny-content{
+	display:block;
+}
+/* OM MENY*/
+.meg-content{
+	display:none;
+	position:absolute;
+	background:white;
+}
+.meg-content a{
+	text-decoration:none;
+	display:block;
+}
+.meg-content a:hover {
+	background-color:salmon;
+}
+.meg:hover .meg-content{
+	display:block;
+}
+/* ASIDE -EKSEMPEL */
+.eksempel{
+	grid-area:left;
+	padding:10px;
+	border:1px solid grey;
+}
+/*FOOTER*/
+.footer{
+	grid-area:footer;
+	background:powderblue;
+	padding:2em;
+	text-align:center;
+}
+/*TABELLER */
+table{
+	font-family:arial;
+	border-collapse: collapse;
+	width:100%;
+}
+td, th{
+	border:1px solid black;
+	text-align:left;
+	padding:8px;
+	font-size: 15px;
+}
+tr:nth-child(odd){
+	background-color:powderblue;
+}
+
+
+
+
+
