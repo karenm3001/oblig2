@@ -122,29 +122,29 @@ a:hover, a:active{
 /* ASIDE */
 .left-sidebar{
 	grid-area: left;
-	height:400px;
+	height:500px;
 	padding:10px;
 	font-family:'Encode Sans Expanded', sans-serif;
+    background-color: #fcfcfc;
 }
 .right-sidebar{
 	grid-area:right;
 	height:500px;
+	background-color:#fcfcfc;
 }
 .oblig{
-	background: ;
 	padding:10px;
 	border:1px solid grey;
-	margin: 0px 5px;
+	margin:5px;
+   
 }
 .forelesning{
-	background:#FFC1C1;
 	padding:10px;
 	border:1px solid grey;
 	margin:5px;
 	
 }
 .ovings{
-	background:#FFC1C1;
 	padding:10px;
 	border:1px solid grey;
 	margin:5px;
